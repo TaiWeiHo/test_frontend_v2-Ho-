@@ -1,30 +1,21 @@
 <template>
-  <button>
+  <button
+    class="px-4 py-2 rounded text-white font-bold transition-all duration-200"
+    :class="[
+      variant === 'primary' ? 'bg-green-600 hover:bg-green-500 active:bg-green-700' :
+      variant === 'warning' ? 'bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 text-gray-900' :
+      variant === 'danger' ? 'bg-red-600 hover:bg-red-500 active:bg-red-700' : 
+      'bg-gray-600'
+    ]"
+    @click="$emit('click')"
+  >
     <slot />
   </button>
 </template>
 
 <script setup lang="ts">
-interface Props {
-  text?: string // 若有輸入時以此為主，若沒有就顯示 slot
-  color?: 'success' | 'error' | 'warn' // 預設為 success
-}
-
-const props = withDefaults(defineProps<Props>(), {})
+defineProps<{
+  variant?: 'primary' | 'warning' | 'danger';
+}>();
+defineEmits(['click']);
 </script>
-
-<style scoped lang="scss">
-.e-btn {
-  // success 綠
-  &-success {
-  }
-
-  // error 紅
-  &-error {
-  }
-
-  // warn 黃
-  &-warn {
-  }
-}
-</style>

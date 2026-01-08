@@ -1,4 +1,16 @@
 {
-  "welcome": "Welcome",
-  "test": "Test"
+  "operation": "Operation",
+  "name": "Name",
+  "age": "Age",
+  "modify": "Edit",
+  "add": "Add",
+  "delete": "Delete",
+  "action": "Actions",
+  "confirm_action": "Confirm Action",
+  "confirm_add": "Are you sure you want to add this user?",
+  "confirm_update": "Are you sure you want to update this user?",
+  "confirm_delete": "Are you sure you want to delete",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "validation_error": "Please fill in all fields!"
 }

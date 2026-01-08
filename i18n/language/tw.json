@@ -1,4 +1,16 @@
 {
-  "welcome": "歡迎",
-  "test": "測試"
+  "operation": "操作",
+  "name": "名字",
+  "age": "年齡",
+  "modify": "修改",
+  "add": "新增",
+  "delete": "刪除",
+  "action": "操作",
+  "confirm_action": "確認操作",
+  "confirm_add": "確定要新增這筆資料嗎？",
+  "confirm_update": "確定要修改這筆資料嗎？",
+  "confirm_delete": "確定要刪除",
+  "cancel": "取消",
+  "confirm": "確認",
+  "validation_error": "請填寫完整資料！"
 }
